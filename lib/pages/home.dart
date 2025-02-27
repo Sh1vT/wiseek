@@ -25,7 +25,7 @@ class HomepageState extends State<Homepage> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           'wiseek',
           style: TextStyle(fontSize: 18),
         ),
@@ -34,12 +34,12 @@ class HomepageState extends State<Homepage> {
       ),
       body: Center(
         child: Padding(
-          padding: EdgeInsets.all(20),
+          padding: const EdgeInsets.all(20),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Container(
-                padding: EdgeInsets.all(20),
+                padding: const EdgeInsets.all(20),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(12),
                   color: Colors.pink.shade100,
@@ -73,7 +73,7 @@ class HomepageState extends State<Homepage> {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               author.isEmpty
@@ -81,10 +81,10 @@ class HomepageState extends State<Homepage> {
                   : Align(
                       alignment: Alignment.centerRight,
                       child: Container(
-                          padding: EdgeInsets.all(20),
+                          padding: const EdgeInsets.all(20),
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(12),
-                            color: Color.fromARGB(255, 246, 198, 242),
+                            color: const Color.fromARGB(255, 246, 198, 242),
                           ),
                           child: Text(
                             author,
@@ -95,7 +95,7 @@ class HomepageState extends State<Homepage> {
                                 color: Colors.grey.shade800),
                           )),
                     ),
-              Spacer(),
+              const Spacer(),
               Center(
                 child: Image.asset(
                     "assets/images/hearts.jpg", // Replace with your image path
@@ -104,10 +104,10 @@ class HomepageState extends State<Homepage> {
                     fit: BoxFit.contain),
               ),
               IconButton(
-                color: Color.fromARGB(255, 90, 94, 141),
+                color: const Color.fromARGB(255, 90, 94, 141),
                 highlightColor: Colors.purple.shade50,
                 iconSize: 30,
-                icon: Icon(Icons.refresh_rounded),
+                icon: const Icon(Icons.refresh_rounded),
                 onPressed: getThought,
               ),
             ],
